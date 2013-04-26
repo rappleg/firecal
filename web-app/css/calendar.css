@@ -1,0 +1,268 @@
+body {
+	background-image: url(../images/noisy_net_@2X.png);
+	background-position: initial initial;
+	background-repeat: initial initial;
+}
+
+.calendarFilter {
+	padding-top: 5px;
+	text-align: center;
+}
+
+.crewSelector div.crew {
+	border-radius: 5px;
+	padding-top: 5px;
+}
+
+.crewSelector div.crew.one {
+	background-color: #3733F7;
+	color: white;
+}
+
+.crewSelector div.crew.two {
+	background-color: #1E7A30;
+	color: white;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.crewSelector div.crew.three {
+	background-color: #E22828;
+	color: white;
+}
+
+.decrementMonth div.filter.month {
+	margin-left: 2%;
+}
+
+.incrementYear div.filter.year,
+.incrementMonth div.filter.month {
+	margin-left: 2%;
+}
+
+.dateSelector div.filter {
+	border-radius: 5px;
+	background-color: #A4A8AD;
+}
+
+.dateSelector div.filter:hover {
+	background-color: #BEC2C6;
+}
+
+.dateSelector div.filter.date {
+	padding-top: 5px;
+	color: white;
+}
+
+.filter.date {
+	padding-bottom: 10px;
+}
+
+.dateSelector div.filter.date:hover {
+	background-color: #A4A8AD;
+}
+
+.periodSelector div.period {
+	border-radius: 5px;
+	background-color: #A4A8AD;
+	padding-top: 5px;
+	color: white;
+}
+
+.periodSelector div.period:hover {
+	background-color: #BEC2C6;
+}
+
+.displayThreeMonths div.period {
+	margin-left: 2% !important;
+	margin-right: 2% !important;
+}
+
+/*.visible-phone .calendarOptions {*/
+	/*padding-top: 50px;*/
+	/*padding-bottom: 100px;*/
+/*}*/
+
+.calendarMonth .monthTitle {
+	text-align: center;
+	padding-top: 5px;
+	color: white;
+}
+
+.calendarDayTitle {
+	display: inline-block;
+	outline: thin ridge;
+	color: black;
+	background: white;
+	width: 13.8%;
+	height: 15px;
+	text-align: center;
+	padding-bottom: 6px;
+}
+
+#calendarWrapper-month {
+	margin-left: 0.8%;
+}
+
+#calendarWrapper-year {
+	margin-left: 0.4%;
+}
+
+#calendarWrapper-year .row-fluid .calendarMonth .calendarDayTitle {
+	width: 13%;
+}
+
+#calendarWrapper-year .row-fluid .calendarMonth .calendarDay {
+	width: 13%;
+	padding-bottom: 13%;
+}
+
+.calendarDay {
+	display: inline-block;
+	outline: thin ridge;
+	width: 13.8%;
+	height: 0;
+	padding-bottom: 13.8%;
+	margin-top: 5px;
+}
+
+.calendarDay.crew-one {
+	background-color: #3733F7;
+}
+
+.calendarDay.crew-one.disabled {
+	background-color: white;
+}
+
+.calendarDay.crew-two {
+	background-color: #1E7A30;
+}
+
+.calendarDay.crew-two.disabled {
+	background-color: white;
+}
+
+.calendarDay.crew-three {
+	background-color: #E22828;
+}
+
+.calendarDay.crew-three.disabled {
+	background-color: white;
+}
+
+.calendarDay.today {
+	opacity: 0.5;
+}
+
+.calendarDay.notThisMonth {
+	border-color: #d3d3d3;
+	opacity: 0.15;
+}
+
+.calendarDay.disabled .calendarDayText {
+	color:black;
+}
+
+.calendarDayText {
+	padding-left: 5px;
+	color: white;
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+	display: inline-block;
+	border-right: 13px solid white;
+	margin-top: 4px;
+}
+
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+	display: inline-block;
+	border-left: 13px solid white;
+	margin-top: 4px;
+}
+
+/*.hidden-phone {*/
+	/*display: block;*/
+/*}*/
+/*.visible-phone {*/
+	/*display: none;*/
+/*}*/
+
+/* All Mobile Sizes (devices and browser)
+====================================================================== */
+
+@media only screen and (max-width: 767px) {
+	/*.hidden-phone {*/
+		/*display: none;*/
+	/*}*/
+	/*.visible-phone {*/
+		/*display: block;*/
+	/*}*/
+	.calendarOptions  .dateSelector{
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	.calendarDayTitle {
+		width: 13.5%;
+	}
+
+	.calendarDay {
+		width: 13.5%;
+		padding-bottom: 13.5%;
+	}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
+=================================================================== */
+
+@media only screen and (max-width: 479px) {
+	/*.hidden-phone {*/
+		/*display: none;*/
+	/*}*/
+	/*.visible-phone {*/
+		/*display: block;*/
+	/*}*/
+	.calendarOptions  .dateSelector{
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	.calendarDayTitle {
+		width: 13.0%;
+	}
+
+	.calendarDay {
+		width: 13.0%;
+		padding-bottom: 13.0%;
+	}
+}
+
+/* iPad Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.calendarDayTitle {
+		width: 13.8%;
+	}
+
+	.calendarDay {
+		width: 13.8%;
+		padding-bottom: 13.8%;
+	}
+}
+
+/* iPad Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	.calendarDayTitle {
+		width: 13.8%;
+	}
+
+	.calendarDay {
+		width: 13.8%;
+		padding-bottom: 13.8%;
+	}
+}
